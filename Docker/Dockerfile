@@ -1,4 +1,4 @@
-FROM rust:latest
+FROM rust:latest as RustImage
 
 WORKDIR /work
 

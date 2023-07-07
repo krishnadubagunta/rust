@@ -2,6 +2,7 @@ version: '3.7'
 
 services:
   app:
+    container_name: rust-app
     build: .
     ports:
       - 8542:3000

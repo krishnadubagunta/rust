@@ -1,0 +1,20 @@
+{
+  "name": "rustprojects",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docker:build": "docker-compose -f Docker/docker-compose.yml build app",
+    "docker:start": "docker-compose -f Docker/docker-compose.yml run app /bin/bash"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krishnadubagunta/rust.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krishnadubagunta/rust/issues"
+  },
+  "homepage": "https://github.com/krishnadubagunta/rust#readme"
+}

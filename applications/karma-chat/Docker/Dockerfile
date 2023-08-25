@@ -7,7 +7,7 @@ RUN apt-get update \
 
 WORKDIR /work
 
-EXPOSE 5000
+RUN cargo install cargo-watch
 
 RUN ["/bin/bash"]
 

@@ -7,7 +7,9 @@ async fn main() {
             format!("{} + {} = {}", a,b,a+b)
         });
 
-    warp::serve(routes)
-        .run(([127, 0, 0, 1], 8000))
+    let routes_with_logs = routes.with(warp::log("ws server"));
+
+    warp::serve(routes_with_logs)
+        .run(([0, 0, 0, 0], 3030))
         .await;
 }

@@ -1,10 +1,10 @@
 services:
-  app:
+  karma_chat:
     build:
       dockerfile: Docker/Dockerfile
     ports:
       - "3030:3030"
     command: cargo watch -x 'run'
     volumes:
-      - ./:/work:delegated
+      - ./applications/karma-chat:/work:delegated
 

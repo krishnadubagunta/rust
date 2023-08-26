@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "docker:build": "docker-compose -f Docker/docker-compose.yml build app",
-    "docker:start": "docker-compose -f Docker/docker-compose.yml run app",
+    "docker:build": "docker-compose build",
+    "docker:start": "docker-compose up",
     "rust:build": "cargo build",
     "build": "npm run rust:build  --prefix applications/LearningRustApp"
   },
